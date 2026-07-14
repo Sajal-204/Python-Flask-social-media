@@ -1,1 +1,26 @@
 
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card-img-top {
+    max-height: 350px;
+    object-fit: cover;
+}
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
