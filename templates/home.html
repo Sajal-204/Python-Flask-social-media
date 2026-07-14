@@ -1,0 +1,46 @@
+ {% extends "layout.html" %}
+ {% block content %}
+ <div class="row">
+
+            <!-- ==== LEFT: Create Post Form ==== -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Create Post</h5>
+                        <form method="POST" action="#">
+                            <div class="mb-3">
+                                <label for="content" class="form-label">What's on your mind?</label>
+                                <textarea class="form-control" id="content" name="content" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Post</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==== RIGHT: Feed of Post Cards ==== -->
+            <div class="col-md-8">
+
+                <!-- Example post card 1 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">@basanta &middot; 2h ago</h6>
+                        <p class="card-text">Just deployed my first Flask app! Bootstrap makes layout so much faster.</p>
+                        <button class="btn btn-outline-primary btn-sm">Like</button>
+                        <button class="btn btn-outline-secondary btn-sm">Comment</button>
+                    </div>
+                </div>
+
+                <!-- Example post card 2 -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">@guest &middot; 5h ago</h6>
+                        <p class="card-text">This grid system (row/col) is way faster than writing custom CSS for layout.</p>
+                        <button class="btn btn-outline-primary btn-sm">Like</button>
+                        <button class="btn btn-outline-secondary btn-sm">Comment</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+ {% endblock %}
